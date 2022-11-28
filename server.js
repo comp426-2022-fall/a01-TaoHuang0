@@ -21,6 +21,7 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
+    
   }
   
   const server = http.createServer((req, res) => {
