@@ -19,7 +19,7 @@ const port = argument.port || 3000
 fs.readFile('./public/index.html', 'utf8', (err, data) => {
   if (err) {
     console.error(err)
-    return;
+    return
   }
   
   const server = http.createServer((req, res) => {
